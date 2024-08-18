@@ -9,11 +9,13 @@
     "@sap/cds": "^8",
     "@sap/cds-odata-v2-adapter-proxy": "^1.9.21",
     "express": "^4",
-    "@cap-js/hana": "^1"
+    "@cap-js/hana": "^1",
+    "@sap/xssec": "^4"
   },
   "devDependencies": {
     "@cap-js/cds-types": "^0.6",
     "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^8",
     "@sap/ux-specification": "^1.120.17"
   },
   "scripts": {
@@ -22,5 +24,10 @@
   },
   "sapux": [
     "app/purchaseorderapp"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "auth": "xsuaa"
+    }
+  }
 }
